@@ -109,10 +109,10 @@ export default {
 
 <style>
 body {
-  background-image: url('@/assets/algonquin.jpg');
+  background-color: white; /* Sets the background to white */
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; /* Keeps the background in place when scrolling */
+  background-attachment: fixed; /* Keeps the background fixed on scroll */
   margin: 0;
   padding: 0;
 }
@@ -159,15 +159,18 @@ a {
   text-decoration: none;
 }
 
+
+
+
 button {
-  padding: 10px;
-  background-color: #005f8b;
+  background-color: #0046be;
   color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  height: 42px;
 }
+
+button:hover {
+  background-color: #0036a4;
+}
+
 
 .product-list {
   display: grid;
@@ -175,16 +178,10 @@ button {
 }
 
 .product-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  margin: 1rem;
-  padding: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 0.5rem;
-  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #e3e4e8;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 
 .product-card img {
   max-width: 100%;
